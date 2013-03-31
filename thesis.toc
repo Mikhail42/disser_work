@@ -1,9 +1,0 @@
-\select@language {russian}
-\contentsline {chapter}{\Russian \CYRV \cyrv \cyre \cyrd \cyre \cyrn \cyri \cyre }{3}{chapter*.2}
-\contentsline {chapter}{\Russian \CYRO \cyrb \cyrz \cyro \cyrr \ \cyrl \cyri \cyrt \cyre \cyrr \cyra \cyrt \cyru \cyrr \cyrery }{4}{chapter*.4}
-\contentsline {chapter}{\chaptername ~1.\hskip 1em \IeC {\CYRN }\IeC {\cyra }\IeC {\cyrz }\IeC {\cyrv }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre } \IeC {\cyrg }\IeC {\cyrl }\IeC {\cyra }\IeC {\cyrv }\IeC {\cyrery }}{5}{chapter.1}
-\contentsline {section}{\numberline {1.1.\hskip 1em}\IeC {\CYRN }\IeC {\cyra }\IeC {\cyrz }\IeC {\cyrv }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre } \IeC {\cyrs }\IeC {\cyre }\IeC {\cyrk }\IeC {\cyrc }\IeC {\cyri }\IeC {\cyri }}{5}{section.1.1}
-\contentsline {section}{\numberline {1.2.\hskip 1em}\IeC {\CYRV }\IeC {\cyrery }\IeC {\cyrv }\IeC {\cyro }\IeC {\cyrd }\IeC {\cyrery } \IeC {\cyrk } \IeC {\cyrp }\IeC {\cyre }\IeC {\cyrr }\IeC {\cyrv }\IeC {\cyro }\IeC {\cyrishrt } \IeC {\cyrg }\IeC {\cyrl }\IeC {\cyra }\IeC {\cyrv }\IeC {\cyre }}{5}{section.1.2}
-\contentsline {chapter}{\Russian \CYRZ \cyra \cyrk \cyrl \cyryu \cyrch \cyre \cyrn \cyri \cyre }{6}{chapter*.6}
-\contentsline {chapter}{{\Russian \CYRL \cyri \cyrt \cyre \cyrr \cyra \cyrt \cyru \cyrr \cyra }}{7}{chapter*.8}
-\contentsline {chapter}{\appendixname ~\CYRA .\hskip 1em \IeC {\CYRN }\IeC {\cyra }\IeC {\cyrz }\IeC {\cyrv }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre } \IeC {\cyrp }\IeC {\cyrr }\IeC {\cyri }\IeC {\cyrl }\IeC {\cyro }\IeC {\cyrzh }\IeC {\cyre }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyrya }}{8}{appendix.A}
