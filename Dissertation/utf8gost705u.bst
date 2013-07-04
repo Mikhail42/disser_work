@@ -1,6 +1,6 @@
 %% This bibliography style attempts
 %% to format bibliography according to
-%% GOST 7.0.5-2008 
+%% GOST 7.0.5-2008
 %%
 %% Package version - 0.1 beta
 %%
@@ -946,7 +946,7 @@ FUNCTION {author.before}
 {
   author empty$
     'skip$
-    {author num.names$ #4 <
+    {author num.names$ #11 <
       {format.authors output
        new.sentence}
       'skip$
@@ -958,7 +958,7 @@ FUNCTION {bookauthor.before}
 {
   bookauthor empty$
     'skip$
-    {bookauthor num.names$ #4 <
+    {bookauthor num.names$ #11 <
       {format.bookauthors output
        new.sentence}
       'skip$
@@ -971,7 +971,7 @@ FUNCTION {author.after}
 {
   author empty$
     'skip$
-    {author num.names$ #3 >
+    {author num.names$ #10 >
       {format.authors.after output
        new.semicolumn }
       'skip$
@@ -982,7 +982,7 @@ FUNCTION {bookauthor.after}
 {
   bookauthor empty$
     'skip$
-    {bookauthor num.names$ #3 >
+    {bookauthor num.names$ #10 >
       {format.bookauthors.after output
        new.semicolumn }
       'skip$
@@ -1487,6 +1487,7 @@ FUNCTION {longest.label.pass}
 EXECUTE {initialize.longest.label}
 
 ITERATE {longest.label.pass}
+
 
 FUNCTION {begin.bib}
 { "\begin{thebibliography}{"  longest.label  * "}" * write$ newline$

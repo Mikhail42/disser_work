@@ -1,6 +1,7 @@
 %%% Макет страницы %%%
-\geometry{a4paper,top=2cm,bottom=2cm,left=2.5cm,right=1cm}
-\linespread{1.3} %полуторный интервал
+\geometry{a4paper,top=2cm,bottom=2cm,left=3cm,right=1cm}
+%\linespread{1.3} %полуторный интервал
+\renewcommand{\baselinestretch}{1.5}
 
 %%% Кодировки и шрифты %%%
 \renewcommand{\rmdefault}{ftm} % Включаем Times New Roman
@@ -13,6 +14,8 @@
 %%% Библиография %%%
 \makeatletter
 \bibliographystyle{utf8gost705u}	% Оформляем библиографию в соответствии с ГОСТ 7.0.5
+%\bibliographystyle{utf8gost780u}
+%\bibliographystyle{ugost2008ls}
 \renewcommand{\@biblabel}[1]{#1.}	% Заменяем библиографию с квадратных скобок на точку:
 \makeatother
 
