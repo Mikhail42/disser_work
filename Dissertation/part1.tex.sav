@@ -22,85 +22,70 @@ $$
 \overrightarrow v(x,y,z)=(u,v,w), (x,y,z)\in V,
 $$
 
-Так как мы рассматриваем нестационарное течение жидкости, поле скоростей будет зависеть от
-вре\-ме\-ни: $\overrightarrow v=\overrightarrow v(x,y,z,t)$. Область,
-занимаемая жидкостью, также может зависеть от времени (в
-частности, в задачах со свободной поверхностью): $V=V(t).$
+Мы рассматриваем нестационарное течение жидкости,а значит поле скоростей будет зависеть от
+вре\-ме\-ни: $(u(x,y,z,t),v(x,y,z,t),w(x,y,z,t))$. Область, занимаемая жидкостью, также может зависеть от времени (в частности, в задачах со свободной поверхностью): $V=V(t)$.
 
-Также будем считать жидкость несжимаемой. Тогда закон сохранения массы для любого объёма движущейся жидкости в переменных Эйлера выражается формулой
-\begin{equation}\label{eq_div}
+Во-вторых будет рассматриваться жидкость при отсутствии вязкости. Известно, что  вода имеет очень небольшой коэффициент вязкости:
+$\nu=1,005\cdot 10^{-3}\ \mbox{Па}\cdot\mbox{с}$\footnote{В Международной системе (СИ) единицей вязкости является паскаль-секунда:
+$1\mbox{Па}\cdot\mbox{с}=1\mbox{кг}/(\mbox{м}\cdot\mbox{с})$}, для сравнения глицерин имеет коэффициент вязкости $\nu=4,22\ \mbox{Па}\cdot\mbox{с},$ см. \cite{loyts}. Принятие коэффициента вязкости равным нулю приводит к существенному упрощению уравнений и граничных условий.
+
+Так как в текущей работе изучаются поверхностные волны, то будем рассматривать тяжелую жидкость, находящуюся с однородном поле силы тяжести. Рассматриваемая жидкость будет обладать однородной плотностью $\rho$.
+
+В-третьих будем считать жидкость несжимаемой. Тогда закон сохранения массы для любого объёма движущейся жидкости в переменных Эйлера выражается формулой
+\begin{equation}\label{eq:divNull}
 div\overrightarrow v(x,y,z,t)=u_x+v_y+w_z=0,\quad
 x,y,z\in V(t).
 \end{equation}
 
-Стоит отметить что уравнение неразрывности~\eqref{eq_div} накладывает существенные трудности при проведении теоретического и численного изучения уравнений.
-
-Также будет рассматриваться жидкость при отсутствии вязкости. Известно, что  вода имеет очень небольшой коэффициент вязкости\footnote{В Международной системе (СИ) единицей вязкости является паскаль-секунда:
-$1\mbox{Па}\cdot\mbox{с}=1\mbox{кг}/(\mbox{м}\cdot\mbox{с})$}:
-$\nu=1,005\cdot 10^{-3}\ \mbox{Па}\cdot\mbox{с},$ для сравнения
-глицерин имеет коэффициент вязкости $\nu=4,22\
-\mbox{Па}\cdot\mbox{с},$ см. \cite{loyts}. Исключение из
-рассмотрения вязкости жидкости (принятие коэффициента вязкости
-равного нулю) означает не только изменение коэффициента в
-уравнениях, но и упрощение самих уравнений и граничных условий.
-
-Так как в текущей работе изучаются поверхностные волны, то будем
-рассматривать тяжелую жидкость, находящуюся с однородном поле силы
-тяжести. Рассматриваемая жидкость будет обладать однородной плотностью $\rho$.
-
-Далее рассмотрим основные уравнения, описывающие динамику идеальной
-несжимаемой жидкости. Данная система уравнений носит название системы уравнений Эйлера:
-\begin{equation}\label{eq_euler}
+Далее рассмотрим основные уравнения движения, которые в совокупности с условием неразрывности \eqref{eq:divNull} описывают динамику идеальной несжимаемой жидкости. Данная система уравнений носит название системы уравнений Эйлера:
+\begin{equation}\label{eq:euler}
 \begin{cases}
-u_t + uu_x + vu_y + wu_z + P_x =
-F_1(x,y,z,t), & \\
-v_t + uv_x + vv_y + wv_z + P_y =
-F_2(x,y,z,t), & \\
-w_t + uw_x + vw_y + ww_z + P_z =
-F_3(x,y,z,t), & \\
+u_t + uu_x + vu_y + wu_z + \frac{P_x}{\rho} = 0, & \\
+v_t + uv_x + vv_y + wv_z + \frac{P_y}{\rho} = 0, & \\
+w_t + uw_x + vw_y + ww_z + \frac{P_z}{\rho} = -g, & \\
 u_x+v_y+w_z=0, & (x,y,z,t)\in V(t)  \\
 \end{cases}
 \end{equation}
-где $\overrightarrow F(x,y,z,t)=(F_1,F_2,F_3)$ есть внешняя сила,
-действующая на жидкость, скалярная функ\-ция~$P(x,y,z,t)$ называется
-давлением. Неизвестными в этой системе уравнений является поле
-ско\-рос\-тей~$\overrightarrow v(x,y,z,t)$ и давление $P(x,y,z,t).$
+где $g$ - ускорение свободного падения, скалярная функ\-ция~$P(x,y,z,t)$ - давление, $\rho$ - плотность.
+Система координат связана с невозмущенной океанической
+поверхностью, ось $z$ направлена вертикально вверх.
 
-Система уравнений Эйлера~\eqref{eq_euler} должна быть дополнена
-граничными и начальными условиями. Предположим, что объем жидкости
-остается неизменным во времени и ограничен границей, сквозь
-которую жидкость не может протекать. Эту границу обозначим
-$\Gamma.$ Предположим, что поверхность $\Gamma$ является
-кусочно-гладкой, и при почти всех $x\in\Gamma$ определен вектор
-внешней нормали $\overrightarrow n(x).$ Условие непротекания через
-границу означает, что нормальная скорость на границе равна нулю
-\begin{equation}\label{eq_nonn}
-(\overrightarrow n(x), \overrightarrow v(x,t))_{\mathbb{R}^3}=0,\quad
-x\in\Gamma.
+Система уравнений Эйлера~\eqref{eq:euler} должна быть дополнена граничными условиями на дне и на свободной поверхности. На дне это условие непротекания жидкости, которое означает что вертикальная скорость на дне равна нулю:
+\begin{equation}\label{eq:granUslBottom}
+  w{|_{z=-h}}=0,
+\end{equation}
+на свободной поверхности $z=\eta(x,y,z)$ это кинематическое условие:
+\begin{equation}\label{eq:kinematGranUsl}
+  {\frac{d\eta}{dt}}{|_{z=\eta}}={(\frac{\partial\eta}{\partial t}+u\frac{\partial\eta}{\partial x}+v\frac{\partial\eta}{\partial y})}|_{z=\eta}=w,
+\end{equation}
+а также динамическое условие:
+\begin{equation}\label{eq:dynGranUsl}
+  {P}|_{z=\eta}=P_{atm},
 \end{equation}
 
+При решении задач гидродинамики, рассматриваемых в океанологии, занимаемые жидкостью областью часто имеют огромные размеры, поэтому допустимо использовать периодические граничные условия.
 
-Мы будем использовать периодические граничные условия, так как при рассмотрении задач гидродинамики, возникающих в океанологии, области, занимаемые жидкостью, часто имеют огромные размеры.
-
-Несмотря на то, что в систему~\eqref{eq_euler} не входит
+Несмотря на то, что в систему~\eqref{eq:euler} не входит
 производная по времени от давления, уравнения Эйлера являются
-эволюционной системой с выделенной переменной $t$, означающей
-время. При изучении динамики эволюционных систем необходимо
-задавать начальные условия
-\begin{equation}\label{eq_ev}
-\begin{array}{cc}
-\overrightarrow v(x,y,z, 0)=\overrightarrow v_0(x,y,z), &  \\
- & (x,y,z\in V) \\
-P(x,y,z,0)=P_0(x,y,z).  & \\
-\end{array}
-\end{equation}
-Поскольку давление $P(x,y,z,t_0)$ может быть определено по полю
-скоростей $\overrightarrow v(x,y,z, t_0)$ при фиксированном $t_0,$ то
-начальные условия~\eqref{eq_ev} должны удовлетворять
-соответствующим условиям согласования.
+эволюционной системой с выделенной переменной времени $t$.
 
-Система уравнений Эйлера представляет собой очень сложную
-математическую задачу как в плане доказательства теорем о
+%
+%При изучении динамики эволюционных систем необходимо
+%задавать начальные условия
+%\begin{equation}\label{eq_ev}
+%\begin{array}{cc}
+%\overrightarrow v(x,y,z, 0)=\overrightarrow v_0(x,y,z), &  \\
+% & (x,y,z\in V) \\
+%P(x,y,z,0)=P_0(x,y,z).  & \\
+%\end{array}
+%\end{equation}
+%Поскольку давление $P(x,y,z,t_0)$ может быть определено по полю
+%скоростей $\overrightarrow v(x,y,z, t_0)$ при фиксированном $t_0,$ то
+%начальные условия~\eqref{eq_ev} должны удовлетворять
+%соответствующим условиям согласования.
+
+Представленная система уравнений Эйлера~\eqref{eq:euler} совместно с граничными условиями~\eqref{eq:granUslBottom}-\eqref{eq:dynGranUsl} позволяет достаточно полно описывать волны на воде \cite{Sretensky}. Но также представляет собой очень сложную
+математическую задачу, как в плане доказательства теорем о
 существовании и единственности решений этой системы, так и с
 вычислительной точки зрения. В двумерном случае результаты о
 разрешимости уравнений Эйлера получены в работах \cite{Udo,Kato}.
@@ -146,194 +131,228 @@ $$
 u_y=v_x,
 $$
 
-\subsection{Линеаризация уравнений Эйлера} \label{sect_linTheory_norming}
----------------------------
+\subsection{Линейная теория} \label{sect_linTheory_norming}
 
-%%%давать везде ссылки на Esher_Shlurman
-Основные уравнения \eqref{eq:eulerLin}-\eqref{eq:kinGranCond_Bed} могут быть обезразмерены \cite{17_Johnson} используя преобразования, которые позволят в дальнейшем оперировать такими понятиями как типичная амплитуда волны $a$ и типичная длина волны $\lambda$
-\begin{multline}\label{eq:normalizeLin}
-    x\rightarrow \lambda x, y\rightarrow h_0y, t\rightarrow \frac{\lambda}{\sqrt{gh_0}}t, \\
-    u\mapsto u\sqrt{gh_0}, v\mapsto v\frac{h_0\sqrt{gh_0}}{\lambda}, \eta \rightarrow a\eta
-\end{multline}
-
-В предположении что $x$ заменяется на $\lambda x$, так новая величина $x$ становится безразмерной переменной. Введем безразмерное давление через переменную $p$, как оценку колебаний давления жидкости от распределения гидростатического давления.
-\begin{equation}\label{eq:normPressure}
-   P = P_a + gh_0(1 - y) + gh_0p,
+Сначала мы рассмотрим линейные волны, когда в уравнениях и граничных условиях пренебрегают нелинейными членами и условия на свободной поверхности $(z=\eta)$ сносят на невозмущенную поверхность  $(z = 0)$. При этом в давлении необходимо выделить гидростатический член в явном виде:
+\begin{equation}\label{eq:linPel}
+  P = P_{atm}-\rho gz+P'(x,y,z,t).
+\end{equation}
+Кроме того, будем считать, что в океане отсутствуют какие-либо течения. Тогда в линейном приближении исходная система
+уравнений имеет следующий вид:
+\begin{equation}\label{eq:linEuler}
+\begin{cases}
+    u_t+P'_x/\rho=0, &\\
+    v_t+P'_y/\rho=0, &\\
+    w_t+P'_z/\rho=0, &\\
+    u_x+v_y+w_z=0; &\\
+\end{cases}
+\end{equation}
+и соответственно граничные условия:
+\begin{equation}\label{eq:granUslLin}
+\begin{cases}
+    w|_{z=-h}=0, &\\
+    \frac{\partial \eta}{\partial t}|_{z=0}=w, &\\
+    P'|_{z=0}=\rho g\eta. &\\
+\end{cases}
+\end{equation}
+Из уравнений движения в системе \eqref{eq:linEuler} вытекает также, что ротор скорости равен нулю, т.е. волновое движение в отсутствие внешних течений всегда является потенциальным. Тогда если введем потенциал скорости с помощью выражений:
+\begin{equation}\label{eq:potenLin}
+u=\frac{\partial \varphi}{\partial x},v=\frac{\partial \varphi}{\partial y},w=\frac{\partial \varphi}{\partial z};
+\end{equation}
+то можем из уравнения неразрывности в системе уравнений \eqref{eq:linEuler} получаем, что введенный потенциал поля скоростей $\varphi$ удовлетворяет уравнению Лапласа:
+\begin{equation}\label{eq:laplasLin}
+\frac{\partial^2 \varphi}{\partial x^2}+\frac{\partial^2 \varphi}{\partial y^2}+\frac{\partial^2 \varphi}{\partial z^2}=0.
+\end{equation}
+Граничные условия, представленные системой \eqref{eq:granUslLin} при этом, а также с учетом уравнения Бернулли, принимают вид:
+\begin{equation}\label{eq:granUslLin1}
+\begin{cases}
+    \frac{\partial \varphi}{\partial z}|_{z=-h}=0, &\\
+    \frac{\partial \eta}{\partial t}|_{z=0}=\frac{\partial \varphi}{\partial z},&\\
+    (\frac{\partial \varphi}{\partial t}+ g\eta)|_{z=0}=0.&\\
+\end{cases}
+\end{equation}
+Также граничные условия на свободной границе $(z=0)$ можно переписать в следующем виде:
+\begin{equation}\label{eq:granUslLin2}
+    (\frac{\partial^2 \varphi}{\partial t^2}+ g\frac{\partial \varphi}{\partial z})|_{z=0}=0.
+\end{equation}
+Таким образом можно составить замкнутую систему уравнений для определения потенциала скоростей $\varphi$:
+\begin{equation}\label{eq:granUslLin1}
+\begin{cases}
+    \frac{\partial^2 \varphi}{\partial x^2}+\frac{\partial^2 \varphi}{\partial y^2}+\frac{\partial^2 \varphi}{\partial z^2}=0, &\\
+    \frac{\partial \varphi}{\partial z}|_{z=-h}=0, &\\
+    (\frac{\partial^2 \varphi}{\partial t^2}+ g\frac{\partial \varphi}{\partial z})|_{z=0}=0. &\\
+\end{cases}
 \end{equation}
 
-далее применим эти преобразования для уравнений \eqref{eq:eulerLin}-\eqref{eq:kinGranCond_Bed}, получим эквивалентную систему:
-\begin{equation}\label{eq:eulerLinNorm1}
-    \begin{cases}
-         u_t + uu_x + vu_y = -p_x\text{ for } x\subset\mathbb{R}, 0<y<(1 + \epsilon\eta(t, x)), & \\
-         \delta^2(v_t + uv_x + vv_y ) = -p_y \text{ for } x\subset\mathbb{R}, 0<y<(1 + \epsilon\eta(t, x)), & \\
-         u_x + v_y = 0\text{ for }x\subset\mathbb{R}, 0<y<(1 + \epsilon\eta(t, x)), & \\
-         u_y - \delta^2v_x = 0 \text{ for } x\subset\mathbb{R}, 0<y<(1 + \epsilon\eta(t, x)), & \\
-         p=\epsilon\eta,   \text{ on } y=1+\epsilon\eta(t, x) \text{ with } x\subset\mathbb{R}, & \\
-         v = \epsilon(\eta_t+u\eta_t), \text{ on } y=1+\epsilon\eta(t, x) \text{ with } x\subset\mathbb{R}, & \\
-         v = 0 \text{ on } y = 0 \text{ with } x\subset\mathbb{R}, & \\
-    \end{cases}
-  \end{equation}
-где величина $\epsilon$ является амплитудным параметром
-\begin{equation}\label{eq:epsilon}
-  \epsilon=\frac{a}{h_0}
+\subsection{Монохроматическая волна}
+Рассмотрим решения уравнений \eqref{eq:linEuler} и \eqref{eq:granUslLin} соответствующие линейным свободным \emph{бегущим или прогрессивным} волнам, распространяющимся вдоль оси $x$. Предположим что волновое поле двумерное, т.е. параллельные гребни волны движутся одинаково. Таким образом используя декартовы координаты $(x,z)$ мы рассматриваем поперечное сечение волновой формы перпендикулярно линии гребня с осью $Z$ направленной вертикально вверх, и осью $X$ ориентированной в направлении движения волны.
+
+Тогда точное решение уравнений \eqref{eq:linEuler}-\eqref{eq:granUslLin} будет иметь вид:
+\begin{equation}\label{eq:solveEuler}
+  \begin{cases}
+  u=Re(U(z))exp[i(\omega t-kx)], & \\
+  w=Re(W(z))exp[i(\omega t-kx)], & \\
+  p=Re(\rho P(z))exp[i(\omega t-kx)], & \\
+  \eta = a_0exp(i\alpha)exp[i(\omega t-kx)]. & \\
+  \end{cases}
 \end{equation}
-а величина $\delta$ параметр мелкой воды
-\begin{equation}\label{eq:epsilon}
-  \delta=\frac{h_0}{\lambda}
+Здесь $\omega$ -- частота; $k$ -- волновое число; $a_0$ -- амплитуда волны; $\alpha$ -- её фаза; $U(z),W(z), P(z)$ -- комплексные функции, описывающие вертикальное распределение волновых полей, их зависимость от глубины; $Re$ -- знак вещественной части получаемых выражений. Такая форма решения имеет место во всех случаях, когда исходные уравнения дополняются граничными условиями; такие задачи называются краевыми. Подставляя решение \eqref{eq:solveEuler} в систему уравнений \eqref{eq:linEuler}-\eqref{eq:granUslLin}, можно найти связь между различными характеристиками:
+\begin{equation}\label{eq:connCharac}
+  U(z)=\frac{1}{ik}\frac{dW}{dz}; P(z)=\frac{\omega}{ik^2}\frac{dW}{dz},
 \end{equation}
-
---------------------------------------------------
-
-
-%%%%%Разобраться с блоком идущим ниже ...
-%%%1) Обратить внимание на y=1 на поверхности, соединить его с предположением о том как расположена поверхность в соответсвие со статьей Дьяченко
-Пятое и шестое уравнение в \eqref{eq:eulerLinNorm1} показывают что оценки $v$ и $p$ для свободной поверхности пропорциональны $\epsilon$. Это согласуется с тем что  при $\epsilon\rightarrow 0$ мы ожидаем что $v = p = 0$ на свободной поверхности $y=1$, так в этих рамках отсутствие волнения означает неподвижную воду с плоской свободной поверхностью. Это приводит к масштабированию
-\begin{equation}\label{eq:scaling}
-   (u, v)\mapsto\epsilon(u, v), p\mapsto\epsilon p
+а для $W$ получается краевая задача:
+\begin{equation}\label{eq:WborderTask}
+  \frac{d^2W}{dz^2}-k^2W=0; \\
+  (W-\frac{\omega^2}{gk}\frac{dW}{dz})|_{z=0}=0,W|_{z=-h}=0.
 \end{equation}
 
-Таким образом после применения процедуры \eqref{eq:normalizeLin} и масштабирования \eqref{eq:scaling} к проблеме \eqref{eq:eulerLinNorm1} приходим к эквивалентной системе
-\begin{equation}\label{eq:eulerLinNorm2}
-    \begin{cases}
-         u_t + uu_x + vu_y = -p_x\text{ for } x\subset\mathbb{R}, 0<y<(1 + \epsilon\eta(t, x)), & \\
-         \delta^2(v_t + uv_x + vv_y ) = -p_y \text{ for } x\subset\mathbb{R}, 0<y<(1 + \epsilon\eta(t, x)), & \\
-         u_x + v_y = 0\text{ for }x\subset\mathbb{R}, 0<y<(1 + \epsilon\eta(t, x)), & \\
-         u_y - \delta^2v_x = 0 \text{ for } x\subset\mathbb{R}, 0<y<(1 + \epsilon\eta(t, x)), & \\
-         p = \eta,   \text{ on } y=1+\epsilon\eta(t, x) \text{ with } x\subset\mathbb{R}, & \\
-         v = \eta_t+\epsilon u\eta_t, \text{ on } y=1+\epsilon\eta(t, x) \text{ with } x\subset\mathbb{R}, & \\
-         v = 0 \text{ on } y = 0 \text{ with } x\subset\mathbb{R}, & \\
-    \end{cases}
-  \end{equation}
-Линейная аппроксимация, применимая для волн малой амплитуды, может быть получена устремлением амплитудного параметра к нулю  $\epsilon\rightarrow 0$ в системе уравнений \eqref{eq:eulerLinNorm2}
-\begin{equation}\label{eq:eulerLinNorm3}
-    \begin{cases}
-         u_t = -p_x\text{ for } x\subset\mathbb{R}, 0<y<1, & \\
-         \delta^2v_t = -p_y \text{ for } x\subset\mathbb{R}, 0<y<1, & \\
-         u_x + v_y = 0\text{ for }x\subset\mathbb{R}, 0<y<1, & \\
-         u_y - \delta^2v_x = 0 \text{ for } x\subset\mathbb{R}, 0<y<1, & \\
-         p = \eta,   \text{ on } y=1 \text{ with } x\subset\mathbb{R}, & \\
-         v = \eta_t, \text{ on } y=1 \text{ with } x\subset\mathbb{R}, & \\
-         v = 0 \text{ on } y = 0 \text{ with } x\subset\mathbb{R}, & \\
-    \end{cases}
-  \end{equation}
-Предположим, что в решении \eqref{eq:eulerLinNorm3} смещение поверхности $\eta$ имеет вид
-\begin{equation}\label{eq:ansatzLin}
-  \eta(t,x)=cos[2\pi(x-c_0t)]
+Решение этой задачи находится в явном виде:
+\begin{equation}\label{eq:solveBorderTask}
+W(z)=Aexp(kz)+exp(-kz),
 \end{equation}
-представляющий периодическую волну (одного периода), распространяющуюся без изменений формы с постоянной скоростью. При этом зависимость функций $u,v,p,\eta$ от $(x,t)$ является периодической функцией от $(x-c_0t)$. Для этого конкретного $\eta$ линеаризованная система уравнений \eqref{eq:eulerLinNorm3} будет иметь точное решение
-
-\begin{equation}\label{eq:eulerSolveLin}
-    \begin{cases}
-         u(t,x,y)=2\pi c_0\delta \frac{cosh(2\pi\delta y)}{sinh(2\pi\delta)} cos[2\pi(x-c_0t)], & \\
-         v(t,x,y)=2\pi c_0 \frac{sinh(2\pi\delta y)}{sinh(2\pi\delta)} sin[2\pi(x-c_0t)], & \\
-         p(t,x,y)=\frac{cosh(2\pi\delta y)}{cosh(2\pi\delta)} cos[2\pi(x-c_0t)]. & \\
-    \end{cases}
-  \end{equation}
-
- при условии, что
- \begin{equation}\label{eq:speedLin}
-   c_0^2=\frac{tanh(2\pi\delta)}{2\pi\delta},
- \end{equation}
-
- В физических переменных решение \eqref{eq:eulerSolveLin} принимает форму
-
-\begin{equation}\label{eq:eulerSolveLinPhys}
-    \begin{cases}
-         \eta(t,x)=\epsilon h_0cos(kx-\omega t), & \\
-         u(t,x,y)=\epsilon\omega h_0 \frac{cosh(ky)}{sinh(kh_0)} cos(kx-\omega t), & \\
-         v(t,x,y)=\epsilon\omega h_0 \frac{sinh(ky)}{sinh(kh_0)} sin(kx-\omega t), & \\
-         P(t,x,y)=P_a+g(h_0-y)+\epsilon gh_0\frac{cosh(ky)}{cosh(kh_0)} cos(kx-\omega t), & \\
-    \end{cases}
-  \end{equation}
-где
-\begin{equation}\label{eq:dispRelationLin}
-  k=\frac{2\pi}{\lambda}, \omega=\sqrt{gk tanh(kh_0)},
+\noindent
+где константы $A$ и $B$ должны находиться из граничных условий. Подстановка \eqref{eq:solveBorderTask} в граничные условия в \eqref{eq:WborderTask} приводит к линейной однородной системе:
+\begin{equation}\label{eq:findAandB}
+  \begin{cases}
+  Aexp(-kh)+Bexp(kh)=0,& \\
+  [1-\omega^2/(gk)]A+[1+\omega^2/(gk)]B=0. & \\
+  \end{cases}
 \end{equation}
-волновое число соответствующее частоте линейной волны, распространяющейся со скоростью
-\begin{equation}\label{eq:speedLin_k}
-  k=\frac{\omega}{k}=\sqrt{g\frac{tanh(kh_0)}{k}},
+Решение \eqref{eq:findAandB} существует только если детерминант системы равен нулю, что приводит к следующему выражению:
+\begin{equation}\label{eq:dispSootn}
+  \omega^2=gk \operatorname{th} (kh).
 \end{equation}
-и периодом
-\begin{equation}\label{eq:periodLin_k}
-  T=\frac{2\pi}{\omega}=\frac{2\pi}{\sqrt{gk tanh(kh_0)}},
-\end{equation}
-над плоским дном со средним уровнем воды $h_0$ и длиной волны $\lambda>0$.
+Таким образом, частота волны и ее волновое число связаны между собой дисперсионными соотношением \eqref{eq:dispSootn}.
 
+Учитывая это константы $A$ и $B$ также связаны между собой. Используя соотношение \eqref{eq:granUslLin} можем окончательно записать полное описание свободных монохроматических волн:
+\begin{equation}\label{eq:solveBorderTask1}
+  \begin{cases}
+  W(z)=i\omega a_0\frac{\operatorname{sh}[k(z+h)]}{\operatorname{sh}(kh)}exp(i\alpha); & \\
+  U(z)=\omega a_0\frac{\operatorname{ch}[k(z+h)]}{\operatorname{sh}(kh)}exp(i\alpha); & \\
+  P(z)=g a_0\frac{\operatorname{ch}[k(z+h)]}{\operatorname{ch}(kh)}exp(i\alpha); & \\
+  \end{cases}
+\end{equation}
+Либо в действительной форме:
+\begin{equation}\label{eq:solveBorderTask1}
+  \begin{cases}
+  \eta=a_0\operatorname{cos}(\omega t-kx+\alpha); & \\
+  w = -\omega a_0\frac{\operatorname{sh}[k(z+h)]}{\operatorname{sh}[kh]}\operatorname{sin}(\omega t - kx+\alpha); & \\
+  u = \omega a_0\frac{\operatorname{ch}[k(z+h)]}{\operatorname{sh}[kh]}\operatorname{cos}(\omega t - kx+\alpha); & \\
+  p = p_{atm}-\rho gz+\rho ga_0\frac{\operatorname{ch}[k(z+h)]}{\operatorname{ch}[kh]}\operatorname{cos}(\omega t - kx+\alpha). & \\
+  \end{cases}
+\end{equation}
+%%Возможно надо переделать
+Волнограмма в фиксированной произвольной точке представляет собой синусоиду с периодом $T=2\pi/\omega$. Максимальный размах колебаний называется высотой волны, и она, в данном случае, равна $2a_0$. Аналогичный вид имеет профиль свободной поверхности в фиксированный момент времени $t$. Расстояние между вершинами в пространстве называется длиной волны: $\lambda=2\pi/k$. Длина волны и период не могут изменяться произвольным образом, они связаны между собой дисперсионным соотношением \eqref{eq:dispSootn}. Любая точка профиля волны перемещается в пространстве со скоростью $c_{\text{фаз}}$, называется фазовой скоростью волны, она определяется как:
+\begin{equation}\label{eq:fazSpeed}
+  c_{\text{фаз}}=\omega/k=\sqrt{(g/k)\operatorname{th}(kh)},
+\end{equation}
+
+Поле скоростей частиц жидкости в толще воды и на ее поверхности определяется выражениями описанными в системе \eqref{eq:solveBorderTask1}. На каждом фиксированном горизонте скорости частиц описываются выражениями типа монохроматической бегущей волны, причем горизонтальная скорости синфазна со смещением поверхности, следовательно максимальное значение модуля скорости на всех горизонтах достигается при прохождении гребня и ложбины. Вертикальная скорость сдвинута по фазе на $\pi/2$ от горизонтальной скорости, так что ее максимум приходится на участки с нулевым смещением поверхности. С глубиной скорости частиц (а следовательно и смещения частиц) убывают, причем характер убывания определяется параметром $kh$ или $h/\lambda$; с уменьшением длины волны волновые возмущения все менее проникают в глубь жидкости.
+
+Волновые возмущения давления(поправка к гидростатическому давлению) повторяют возмущения горизонтальной скорости.
+%чаапв
 \subsection{Связь придонного давления и смещения поверхности в линейной теории}
-Определим динамическое давление $P_d$ как разница между общим давлением $P$ и гидростатическим давлением $P_h$
-$$
-P_h=P_a+g(h_0-y),
-$$
-Исходя из первого и последнего выражения в \eqref{eq:eulerSolveLinPhys} можно видеть что
-\begin{equation}\label{eq:dynPressure}
-  P_d(x,y,t)=g\frac{cosh(ky)}{cosh(kh_0)}\eta(t,x),
+
+
+Обзор почему это является проблемой и что с этим делать, обзор работ, затронуть Bishop Donelan, Turkey и программиста, \cite{Huang_press}
+
+%%
+%Определим динамическое давление $P_d$ как разница между общим давлением $P$ и гидростатическим давлением $P_h$
+%$$
+%P_h=P_a+g(h_0-y),
+%$$
+%Исходя из первого и последнего выражения в \eqref{eq:eulerSolveLinPhys} можно видеть что
+%\begin{equation}\label{eq:dynPressure}
+%  P_d(x,y,t)=g\frac{cosh(ky)}{cosh(kh_0)}\eta(t,x),
+%\end{equation}
+%таким образом в линейной теории передаточная функция связи давления и смещения поверхности, описывается выражением
+%\begin{equation}\label{eq:transFunctionUnitWave}
+%  R(y)=g\frac{cosh(ky)}{cosh(kh_0)},
+%\end{equation}
+
+%Со статьей Huang
+Выше подробно рассмотрено распространение монохроматической волны в рамках линеаризованного уравнения Эйлера, обобщим полученные результаты на случай волнения с рядом приближений. Поверхностные волны могут быть аппроксимированы комбинацией линейных волн [Лонге-Хиггинс], разлиных по амплитудам $a_i$, волновым числам $k_i$, частотой $\omega_i$, направлением $\theta_i$ и фазой $\alpha_i$, тогда:
+
+\begin{equation}\label{eq:approx}
+    \eta(x,y,t)\approx\sum\limits_i\eta_i(x,y,t)\approx
+    \sum\limits_i a_isin(k_ixcos\theta_i+k_iysin\theta_i-\omega_i t+\alpha_i),
 \end{equation}
-таким образом в линейной теории передаточная функция связи давления и смещения поверхности, описывается выражением
-\begin{equation}\label{eq:transFunctionUnitWave}
-  R(y)=g\frac{cosh(ky)}{cosh(kh_0)},
+\noindent
+тогда полное давление (гидростатическое и гидродинамическое) в соответствии с \eqref{eq:solveBorderTask1}  может быть выражено с помощью следующей суммы:
+
+%\begin{equation}
+\begin{align}\label{eq:approxPress}
+    p(x,y,z,t) &\approx p_{atm}-\rho gz+\rho g \sum\limits_i a_i\frac{\operatorname{ch}[k_i(z+h)]}{\operatorname{ch}[k_ih]}sin(k_ixcos\theta_i+k_iysin\theta_i-\omega_i t+\gamma_i)=&\notag\\
+    &=p_{atm}-\rho gz+\rho g\sum\limits_i\frac{\operatorname{ch}[k_i(z+h)]}{\operatorname{ch}[k_ih]}\eta_i(x,y,t)=&\\
+    &=p_{atm}-\rho gz+\rho g\sum\limits_iR(k_i,z,h)\eta_i(x,y,t)= &\\
+    &=p_{atm}-\rho gz+\rho g\sum\limits_iR[k(\omega_i,h),z,h]\eta_i(x,y,t),&
+\end{align}
+%\end{equation}
+\noindent
+здесь $R[k(\omega_i,h),z,h]=R(\omega_i,z,h)$ - линейная передаточная функция. Зависимость волновых чисел $k_i$ от $\omega_i$ получается из дисперсионного соотношения \eqref{eq:dispSootn}.
+\begin{equation}\label{eq:dispSootn1}
+\omega_i^2=k_ig\operatorname{th}(k_ih),
 \end{equation}
 
-%%%%%Переработать в соответствие со статьей Bishop_Donelan
-Выражение \eqref{eq:transFunctionUnitWave} справедливо для монохроматической волны, представим это выражение для реального морского волнения.
+Аналитическое решение этого дисперсионного уравнения относительно $k$ невозможно. Обычно оно решается итерациями. Но можно использовать два другие более простые способы\cite{kras} \cite{Zasl_Kras_2001}:
 
-Пусть спектр вариаций донного давления $P(x,t=t_1)$ в конкретный момент времени $t=t_1$ описывается формулой
-
-\begin{equation}\label{eq:spectrPressure}
-    S_P(k)=\frac{1}{\sqrt{2\pi}}\int\limits_{-\infty}^{\infty}P(x,t_1)e^{-ikx}dx,
-\end{equation}
-
-тогда связь спектра вариации донного давления $S_P(k)$ и спектра колебания поверхности моря $S_{\eta}(k)$ может быть описана формулой
-
-\begin{equation}\label{eq:relationSpectrs_K}
-    S_{\eta}(k)=\frac{S_P(k)}{R(y)},
-\end{equation}
-
-Но как правило при проведении натурных наблюдений с помощью датчиков донного давления в качестве результата наблюдений получается запись давления в точке от времени $P(t)$, требуется же получить колебания поверхности жидкости во времени $\eta(t)$. Таким образом в результате имеем
-
-\begin{equation}\label{eq:relationSpectrs}
-    S_{\eta}(\omega)=\frac{S_P(\omega)}{R(\omega,y)},
-\end{equation}
-где
-\begin{equation}\label{eq:coeffAtten_W}
-    R(\omega,y)=g\frac{cosh(k(\omega)y)}{cosh(k(\omega)h_0)}
-\end{equation}
-
-
-%%%%%%%%END Блок надо продумать и переписать, в соотв со статьей Бишопа
-
-Зависимость волнового числа $k$ от $\omega$ получается из дисперсионного соотношения \eqref{eq:dispRelationLin}. Аналитическое решение этого дисперсионного уравнения относительно $k$ невозможно. Обычно оно решается итерациями. Но можно использовать другой, более простой метод \cite{kras} \cite{Zasl_Kras_2001}.
-
-Можно видеть, что решение уравнения \eqref{eq:dispRelationLin} относительно $k$ имеет форму
+Первый метод основан на замечании о том, что решение уравнения \eqref{eq:dispSootn} относительно $k$ имеет форму
 \begin{equation}\label{eq:dispRel_Solve1}
   k=k(\omega,h)=\frac{\omega^2}{g}f(\omega_h), \omega_h=\sqrt{\frac{h}{g}}\omega,
 \end{equation}
 здесь $\omega_h$ -- безразмерная частота, $f(\omega_h)$ -- некоторая функция которая зависит только от безразмерной частоты $\omega_h$.
 
-Подставляя \eqref{eq:dispRel_Solve1} в \eqref{eq:dispRelationLin} получим уравнение для $f$
+Подставляя \eqref{eq:dispRel_Solve1} в \eqref{eq:dispSootn} получим уравнение для $f$
 $$
 f\tanh(\omega_h^2f)=1,
 $$
-Это уравнение не может быть разрешено относительно $f$, но его можно решить относительно $\omega_h$
+Это уравнение не может быть разрешено относительно $f$, но его можно решить относительно $\omega_h$:
+
 $$
-\omega_h = \sqrt{(1/f)arcth(1/f)}
+\omega_h = \sqrt{(1/f)arcth(1/f)}.
 $$
+
 Изменяя $f$ в диапазоне от 1 до $\infty$, можем рассчитать функцию $\omega_h=\omega_h(f)$, из которой обратную к ней функцию $f=f(\omega_h)$ можно получить естественным поворотом графика на $90^o$). Рассчитанная функция $f(\omega_h)$ обладает следующими свойствами:
 \begin{itemize}
   \item $f(\omega_h)\rightarrow\frac{1}{\omega_h}$ при $\omega_h\rightarrow0$ ( практически это происходит при $\omega_h\leq0.4$ \cite{Zasl_Kras_2001}),
   \item $f(\omega_h)\rightarrow1$ при $\omega_h\rightarrow\infty$ ( практически это происходит при $\omega_h\geq1.62$ \cite{Zasl_Kras_2001}).
 \end{itemize}
 
-Существует также возможность расчета зависимости $k(\omega,h)$, существенно более удобная для компьютерных вычислений \cite{hunt}.
+Второй способ расчета зависимости $k(\omega,h)$, существенно более удобный для компьютерных вычислений показан в работе \cite{hunt} и также достаточно широко применяется.
 
 \begin{equation}\label{eq:hantApprox}
   k^2=\frac{\omega^2}{gh_0G(\alpha)}+\frac{\omega^4}{g^2},
 \end{equation}
+
 $$
 G(\alpha)=1+0.6522\alpha+0.4622\alpha^2+0.0864\alpha^4+0.0675\alpha^5, \alpha=\frac{\omega^2h_0}{g},
 $$
 
 Представление функции $G(a)$ в виде полинома было сделано Хантом \cite{hunt} для всей области частот. В случае мелкой и глубокой воды «полиномное» дисперсионное соотношение совпадает с точным. В промежуточной зоне его точность составляет доли процентов. Именно поэтому оно стало широко использоваться в инженерной практике для нахождения волнового числа по заданной частоте волны.
 
+Для синхронизации волны и данных о давлении, полученных с помощью измерений в начале системы координат, мы можем определить:
+
+\begin{align}\label{eq:longeHigg}
+\eta(t)&\approx\sum\limits_i\eta(t)\approx\sum\limits_ia_i\sin(-\omega_it+\alpha_i)\approx
+\sum\limits_i(A_i\sin\omega_it+B_i\cos\omega_it),&\\
+p(t)&\approx p_{atm}-\rho gz+\rho g\sum\limits_iR(\omega_i,z,h)\eta_i(t)
+\end{align}
+
+Тогда преобразование Фурье от функций смещения поверхности $\eta(t)$  и гидродинамического давления $p_{dyn}(t)=p(t)-p_{atm}+\rho gz$ может быть теоретически представимо \cite{Huang_Tsai_2008} в виде:
+
+\begin{align}\label{eq:spectrs}
+S_{\eta\eta}(\omega_i)=\frac{A_i^2+B_i^2}{2}T,
+S_{pp}(\omega_i)=[\rho gR_p(\omega_i,z,h)]^2\frac{A_i^2+B_i^2}{2}T.
+\end{align}
+
+Таким образом, используя выражения \eqref{eq:spectrs} можно получить связь между спектрами вариаций давления в толще воды и поверхностными волнами:
+
+\begin{equation}\label{eq:spectrsRelat}
+  \sqrt{\frac{S_{pp}(\omega_i)}{S_{\eta\eta}(\omega_i)}}=\rho gR_p(\omega_i,z,h)=\rho g\frac{\operatorname{ch}[k_i(z+h)]}{\operatorname{ch}[k_ih]}.
+\end{equation}
+\noindent
+
+Расхождения между реальной передаточной функцией и функцией 
 %%%Ограничения по частоте и сверху в Главе 2.
 
 \section{Слабодисперсионная модель нелинейных морских волн в бассейне произвольной глубины }
