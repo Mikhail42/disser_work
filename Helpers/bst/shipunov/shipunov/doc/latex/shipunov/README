@@ -1,0 +1,126 @@
+shipunov 2008/02/xx v1.0
+Copyright (c) Alexey Shipunov <plantago(at)herba.msu.ru>, 2008
+  
+************************************************************
+
+Contents of README
+ 1. Description
+ 2. Installation
+ 3. Usage notes
+ 4. History
+ 5. Acknowledgements
+ 6. Licence
+ 7. Files
+
+1. Description
+----------------------
+ 
+This is the version 1.0 of 'shipunov' bundle, collection of LaTeX packages and classes, along with one bibliography style, two independent examples and a set of Perl scripts for converting TeX files. Many of them intend to help field biologists and Russian writers, others have wider application.
+
+Most of packages have example files, with `tex' extension and '-ex' postfix. Some of them are in Russian (codepage cp1251, `-ru' postfix). One example is for XeLaTeX and has `-x' postfix. Documentation files have `-doc' postfix. Besides, two examples did not related with any packages, they just demonstrate how to produce reliable forms for biological (morphometry and floristic/faunistic) fieldwork.
+
+Any suggestions concerning this package are highly appreciated.
+
+The Russian mini-review can be found in the "review.tex" file, written by Eugene Baldin, with minor corrections of bundle author.
+
+2. Installation
+---------------
+ 
+Extract the zip archive to the $LOCALTEXMF directory of your system. Refresh your filename database. Please see the documentation of your LaTeX distribution for further details.
+ 
+3. Usage notes
+--------------
+ 
+For XeTeX example, the XeTeX should be installed, and appropriate system fonts listed in "\set...font" declaration(s). For Russian examples, LH fonts, "cm-super" and "cyrillic" packages should be installed. Russian hyphenation patterns should be loaded via "babel". For using "rusnat" bibliography style, some preparations are needed in the source bib file (example is in the documentation). To run bibtex on aux-file, I recommend the command like "bibtex8 -B -c cp1251.csf rusnat-ex1-ru.aux".
+
+4. History
+----------
+ 
+2008/02/xx Version 1. Initial CTAN release. However, the bundle was mantained locally since 1997.
+ 
+
+5. Acknowledgements
+-------------------
+ 
+For suggestions and contributions I would like to thank Eugeny Baldin. 99% of code and documentation for "lstable" package have been written by Robert Nilsson.
+ 
+  
+6. Licence
+----------
+ 
+This work may be distributed and/or modified under the conditions of the LaTeX Project Public License, either version 1.3 of this license or (at your option) any later  version. The latest version of this license is in http://www.latex-project.org/lppl.txt and version 1.3 or later is part of all distributions of LaTeX version 2005/12/01 or later.
+ 
+7. Files
+-------- 
+
+This work consists of the following files:
+
+* README	this file, including licence
+* review.tex Russian mini-review, written by Eu. Baldin
+
+* Class files and their examples:
+
+cassete.cls	Audiocassete labels
+etiketka.cls	Herbarium labels
+cassete-ex-ru.tex
+etiketka-ex-ru.tex
+etiketka-ex1-en.tex
+etiketka-ex2-en.tex
+
+* LaTeX style files, their examples and/or documentation:
+
+altverse.sty	Typesetting verses, depends on "xtab" package
+autolist.sty	Various lists, depends on "calc" package
+biokey.sty		Pretty formatting of biological identification keys
+biolist.sty	Pretty formatting of floristic/faunistic species lists
+boldline.sty	Thick lines in tables, depends on "array" package
+classif2.sty	Pretty formatting of biological classifications
+drcaps.sty		Various drop caps
+flower.sty		Flower formulas, depends on "wasy" font package
+isyntax.sty	Interactive syntax check, depends on "ifthen" and "syntaxonly" packages
+numerus.sty	Spell numbers in Russian (with gender!)
+punct.sty		Straight punctuation marks inside italics
+sltables.sty	LaTeX modification of R. Nilson S-Tables Plain TeX macro
+starfn.sty		Footnote marks as stars, depends on "footnpag" package
+altverse-ex-en.tex
+altverse-ex1-ru.tex
+altverse-ex2-ru.tex
+autolist-ex-en.tex
+autolist-ex-ru.tex
+biokey-doc-en.tex
+biokey2html-doc-en.tex
+biokey2html-ex-en.tex
+biolist-ex-en.tex
+boldline-ex-en.tex
+classif2-ex-en.tex
+drcaps-ex-en.tex
+flower-ex-en.tex
+flower-ex-en-x.tex	XeLaTeX example to "flower" package
+isyntax-ex-en.tex
+numerus-ex-ru.tex
+punct-ex-en.tex
+sltables-doc-en.tex
+starfn-ex-ru.tex
+
+* BibTeX bibliography style, documentation and examples:
+
+rusnat.bst		Russian bibliography style, depends on "natbib" package
+rusnat-doc-ru.tex
+rusnat-ex-ru.bib
+rusnat-ex1-ru.tex
+rusnat-ex2-ru.tex
+
+* Two examples of field forms:
+
+field-form-ex1-ru.tex		Field form for morphometry
+field-form-ex2-ru.tex		Field form for floristics
+
+* Perl scripts and shell command files:
+biokey2html1.pl
+biokey2html2.pl
+biokey2html3.pl
+biokey2html.bat	Windows command file
+biokey2html.sh	Bash command file
+
+There may be also additional PDF and HTML files, results of examples processing.
+
