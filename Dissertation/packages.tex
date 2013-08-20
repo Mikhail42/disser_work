@@ -24,6 +24,7 @@
 \usepackage{longtable}					% Длинные таблицы
 \usepackage{multirow,makecell,array}	% Улучшенное форматирование таблиц
 
+
 %%% Общее форматирование
 \usepackage[singlelinecheck=off,center]{caption}	% Многострочные подписи
 \usepackage{soul}									% Поддержка переносоустойчивых подчёркиваний и зачёркиваний
@@ -44,3 +45,30 @@
 \usepackage{tocloft}
 
 \usepackage{color}
+
+\usepackage{listings}
+\lstloadlanguages{C,[ANSI]C++}%,Clean,make,Fortran}%Загружаемые языки
+\lstdefinestyle{customc}{
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+  frame=L,
+  xleftmargin=\parindent,
+  language=C,
+  showstringspaces=false,
+  basicstyle=\footnotesize\ttfamily,
+  keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\itshape\color{purple!40!black},
+  identifierstyle=\color{blue},
+  stringstyle=\color{orange},
+}
+
+\lstdefinestyle{customasm}{
+  belowcaptionskip=1\baselineskip,
+  frame=L,
+  xleftmargin=\parindent,
+  language=[x86masm]Assembler,
+  basicstyle=\footnotesize\ttfamily,
+  commentstyle=\itshape\color{purple!40!black},
+}
+
+\lstset{escapechar=@,style=customc}

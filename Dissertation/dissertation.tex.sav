@@ -1,0 +1,30 @@
+\documentclass[a4paper,14pt]{extreport}
+%\documentclass[a4paper,12pt,russian]{extarticle}
+
+%%%Замечания:
+1. Исправить метод Уэлча
+2. Исправить раздел "Связь давления и волнения"
+3. Сделать описание картинки.
+4. Добавить литературу.
+5. В Главу 1, подумать над добавлением способа обработки ветровых волн, нахождения высот и периодов.
+6. Добавить туда 
+
+\input{packages}		% Подключаемые пакеты
+\input{styles}			% Пользовательские стили
+
+\begin{document}
+
+\input{names}			% Переопределение именований
+
+\input{title}			% Титульный лист
+\input{contents}		% Оглавление
+\input{introduction}	% Введение
+\input{part1}			% Глава 1
+\input{part2}			% Глава 2
+\input{part3}			% Глава 3
+\input{conclusion}		% Заключение
+\input{lists}			% Списки таблиц и изображений
+\input{referenses}		% Список литературы
+\input{appendix}		% Приложения
+
+\end{document}

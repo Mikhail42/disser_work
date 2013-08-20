@@ -1,0 +1,765 @@
+
+@ARTICLE{DiachZK1996,
+  author = {Дьяченко and Захаров and Кузнецов},
+  title = {Название статьи},
+  journal = {Журнал},
+  year = {1996},
+  volume = {1},
+  pages = {100-101}
+}
+
+@BOOK{kovalev1993,
+  title = {Технические средства для измерения длинных волн в океане},
+  publisher = {Владивосток: Издательство ДВО РАН},
+  year = {1993},
+  editor = {},
+  author = {П.Д. Ковалев}
+}
+
+@ARTICLE{Zasl_Kras_2001,
+  author = {М.М. Заславский and В.П. Красицкий },
+  title = {О пересчете данных волнографа с датчиком давления на спектр поверхностных волн},
+  journal = {Океанология},
+  year = {2001},
+  volume = {41},
+  number = {2},
+  pages = {195–200}
+}
+
+@ARTICLE{Kuo_Chiu_1994,
+  author = {Kuo, Y.-Y. and Chiu, J.-F.},
+  title = {Transfer function between the wave height and wave pressure for progressive waves},
+  journal = {Coastal Engineering},
+  year = {1994},
+  volume = {23},
+  pages = {81-93},
+  language = {english}
+}
+
+@ARTICLE{Baqueizo_Losada_1995,
+  author = {Baqueizo, A. and Losada, M. A.},
+  title = {Transfer function between wave height and wave pressure for progressive waves},
+  journal = {Coastal Engineering},
+  year = {1995},
+  volume = {24},
+  pages = {351–353},
+  language = {english}
+}
+
+@ARTICLE{Tsai_Huang_2005,
+  author = {Tsai, C.-H. and Huang, M.-C. and Young, F.-J. and Lin, Y.-C. and Li, H. W.},
+  title = {On the recovery of surface wave by pressure transfer function},
+  journal = {Ocean Engineering},
+  year = {2005},
+  volume = {32},
+  pages = {1247–1259},
+  language = {english}
+}
+
+@ARTICLE{Huang_Tsai_2008,
+  author = {Huang, M.-C. and Tsai, C-H.},
+  title = {Pressure transfer function in time and time-frequency domains},
+  journal = {Ocean Engineering},
+  year = {2008},
+  volume = {35},
+  pages = {1203–1210},
+  language = {english}
+}
+
+@ARTICLE{Bishop_Donelan_1987,
+  author = {Bishop, C.T. and Donelan, M.A.},
+  title = {Measuring waves with pressure transducers},
+  journal = {Coast. Engng},
+  year = {1987},
+  volume = {11},
+  pages = {309–328},
+  language = {english}
+}
+
+@ARTICLE{Esher_Schlurmann_2008,
+  author = {Esher, J. and Schlurmann, T.},
+  title = {On the recovery of the free surface from the pressure within periodic travelling water waves},
+  journal = {J. Nonlinear Math. Phys.},
+  year = {2008},
+  volume = {15},
+  pages = {50–57},
+  language = {english}
+}
+
+@ARTICLE{Constantin_Strauss_2010,
+  author = {Constantin, A. and Strauss, W.},
+  title = {Pressure beneath a Stokes wave},
+  journal = {Commun. Pure Appl. Maths},
+  year = {2010},
+  volume = {63},
+  pages = {533–557},
+  language = {english}
+}
+
+@ARTICLE{Constantin_Esher_Hsu2011,
+  author = {Constantin, A. and Esher, J. and Hsu, H.-C.},
+  title = {Pressure beneath a solitary water wave: mathematical theory and experiments},
+  journal = {Arch. Rat. Mech. Anal.},
+  year = {2011},
+  volume = {201},
+  pages = {251–269},
+  language = {english}
+}
+
+@ARTICLE{Deconink_2012,
+  author = {Deconink, B.  and Olivears, K.L. and Vasan, V.},
+  title = {Relating the bottom pressure and surface elevation in the water wave problem},
+  journal = {J. Nonl. Math. Physics},
+  year = {2012},
+  volume = {19},
+  pages = {1240014 (11 pages)},
+  language = {english}
+}
+
+@ARTICLE{Oliveras_2012,
+  author = {Oliveras, K. L. and Vasan, V. and Deconick, B.  and Henderson, D.},
+  title = {Recovering surface elevation from pressure data},
+  journal = {SIAM J. Appl. Maths.},
+  year = {2012},
+  volume = {72},
+  number = {3},
+  pages = {897–918},
+  language = {english}
+}
+
+@ARTICLE{Constantin_2012,
+  author = {Constantin, A.},
+  title = {On the recovery of solitary wave profiles from pressure measurements},
+  journal = {J Fluid Mech.},
+  year = {2012},
+  volume = {669,
+  pages = {376-384},
+  language = {english}
+}
+
+@ARTICLE{dart_Bernard,
+  author = {Mungov, G. and Eblé, M. and Bouchard, R.},
+  title = {DART® tsunameter retrospective and real-time data: A reflection on 10 years of processing in support of tsunami research and operations},
+  journal = {Pure Appl. Geophys.},
+  year = {2012},
+  doi = {10.1007/s00024-012-0477-5},
+  language = {english}
+}
+
+@CONFERENCE{Kuznetsov_EGU2013,
+AUTHOR       = {Kuznetsov, K.I. and Kurkin, A.A. and Pelinovsky, E.N. and Kovalev, P.D.},
+Editor       = {},
+TITLE        = {Statistical characteristics of wind waves obtained in the south-eastern coast of Sakhalin Island},
+BOOKTITLE    = {Geophysical Research Abstracts},
+Publisher    = {},
+YEAR         = {2013},
+Pages        = {EGU2013-2845-3},
+Organization = {EGU General Assembly 2013},
+Address      = {},
+Month        = {april},
+Note         = {},
+Key          = {}
+}
+
+@INBOOK{ Zhel_1985,
+AUTHOR    = {Железняк, М.И.},
+EDITOR    = {},
+BOOKTITLE = {Накат цунами на берег},
+TITLE     = {Воздействие длинных волн на сплошные вертикальные преграды},
+CHAPTER   = {},
+PAGES     = {122-139},
+PUBLISHER = {Горький: ИПФ АН СССР},
+YEAR      = {1985},
+}
+
+@INBOOK{longeHigg,
+AUTHOR    = {Лонге-Хиггинс, М.С.},
+EDITOR    = {},
+BOOKTITLE = {Ветровые волны},
+TITLE     = {Статистический анализ случайной движущейся поверхности},
+CHAPTER   = {},
+PAGES     = {125-218},
+ADDRESS   = {Москва},
+PUBLISHER = {ИИЛ},
+YEAR      = {1962},
+}
+
+
+. В кн.: . М.: ИИЛ, 1962. С. 125-218.
+
+
+@ARTICLE{Zaitsev_Kuzn_freak_2012,
+  author = {Зайцев, А.И. and Малашенко, А.Е. and Костенко, И.С. and Пелиновский, Е.Н. and Кузнецов, К.И.},
+  title = {Регистрация волн-убийц в заливе Анива Охотского моря},
+  journal = {Труды НГТУ им. Р.Е. Алексеева},
+  year = {2012},
+  volume = {1},
+  pages = {33-41}
+}
+
+@ARTICLE{firstResultsSakh_2009,
+  author = {Левин, Б.В. and Чернов, А.Г. and Шевченко, Г.В. and Ковалев, П.Д. and Ковалев, Д.П. and Куркин, А.А. and Лихачева, О.Н. and Шишкин, А.А.},
+  title = {Первые результаты регистрации длинных волн в диапазоне периодов цунами в районе Курильской гряды на разнесенной сети станций},
+  journal = {Доклады Академии Наук},
+  year = {2009},
+  volume = {427},
+  number = {2},
+  pages = {239-244}
+}
+
+@BOOK{ENP_practics,
+
+  title = {Практикум по динамике океана},
+  year = {1992},
+  editor = {},
+  publisher = {Санкт-Петербург: Гидрометеоиздат}
+  author = {А.В. Некрасов and Е.Н. Пелиновский}
+}
+
+@ARTICLE{Green_1976,
+  author = {Green, A.E. and Naghdi, P.M.},
+  title = {A derivation of equations for wave propagation in water of variable depth},
+  journal = {J. Fluid Mech.},
+  year = {1976},
+  volume = {78},
+  pages = {237-246},
+  language = {english}
+}
+
+@INBOOK{ Zhel_Pel_1985,
+AUTHOR    = {М.И. Железняк and Е.Н. Пелиновский},
+EDITOR    = {},
+BOOKTITLE = {Накат цунами на берег},
+TITLE     = {Физико математические модели наката цунами на берег},
+PAGES     = {8-34},
+PUBLISHER = {Горький: ИПФ АН СССР},
+YEAR      = {1985},
+}
+
+@ARTICLE{Fedotova_2008,
+  author = {З.И. Федотова and Г.С. Хакимзянов},
+  title = {Нелинейно-дисперсионные уравнения мелкой воды на нестационарном дне},
+  journal = {Вычислительные технологии},
+  year = {2008},
+  volume = {13},
+  pages = {114-126}
+}
+
+@ARTICLE{Fedotova_2012,
+  author = {З.И. Федотова and Г.С. Хакимзянов },
+  title = {Анализ условий вывода нелинейно – дисперсионных уравнений},
+  journal = {Вычислительные технологии},
+  year = {2012},
+  volume = {17},
+  pages = {94-109}
+}
+
+@ARTICLE{Zaits_Nevelsk_2008,
+  author = {Зайцев А.И.и др.},
+  title = {Невельское цунами 2 августа 2007 года: инструментальные данные и численное моделирование.},
+  journal = {Доклады Академии Наук},
+  year = {2008},
+  volume = {421},
+  number = {2},
+  pages = {1-4}
+}
+
+@ARTICLE{Zaits_Kuz_NGTU_2013,
+  author = {А.И. Зайцев and И.С. Костенко and К.И. Кузнецов and Р.В. Леоненков and А.Р. Гиниятулин and Ю.А  Панфилова},
+  title = {ОРГАНИЗАЦИЯ ИНСТРУМЕНТАЛЬНЫХ НАБЛЮДЕНИЙ ПОВЕРХНОСТНЫХ ВОЛН В ОХОТСКОМ МОРЕ.},
+  journal = {Труды НГТУ},
+  year = {2013},
+  volume = {},
+  number = {},
+  pages = {}
+}
+
+@ARTICLE{1_Zaits_Pel_Freak_2011,
+  author = {Зайцев, А.И. and Малашенко, А.Е. and Пелиновский, Е.Н.},
+  title = {Аномально большие волны вблизи южного по ,бережья о. Сахалин.},
+  journal = {Фундаментальная и прикладная гидрофизика},
+  year = {2011},
+  volume = {4},
+  number = {4},
+  pages = {35-42}
+}
+
+@ARTICLE{3_Zakh_Sh_jetp_2010,
+  author = {Захаров, В.Е. and Шамин, Р. В.},
+  title = {О вероятности возникновения волн-убийц.},
+  journal = {Письма в ЖЭТФ},
+  year = {2010},
+  volume = {91},
+  number = {2},
+  pages = {68-71}
+}
+
+@ARTICLE{kras,
+  author = {Красицкий, В.П.},
+  title = {Определение спектра ветровых волн в прибрежной зоне},
+  journal = {Океанология},
+  year = {1974},
+  volume = {14},
+  number = {2},
+  pages = {230-235}
+}
+
+@ARTICLE{4_Zakh_Sh_jetp_2012,
+  author = {Захаров, В.Е. and Шамин, Р. В.},
+  title = {Статистика волн-убийц в вычислительных экспериментах},
+  journal = {Письма в ЖЭТФ},
+  year = {2012},
+  volume = {96},
+  number = {1},
+  pages = {68-71}
+}
+
+@ARTICLE{hunt,
+  author = {Hunt, J.N.},
+  title = {Direct solution of wave dispersion equation},
+  journal = {Journal of the Waterway Port Coastal and Ocean Division},
+  year = {1976},
+  volume = {105},
+  number = {4},
+  pages = {457-459},
+  language = {english}
+}
+
+@INBOOK{5_Kurk_freak_2005,
+AUTHOR    = {Куркин, А.А. and др.},
+EDITOR    = {},
+BOOKTITLE = {Нелинейные волны-2004},
+TITLE     = {Физика волн-убийц в океане},
+PAGES     = {37-51},
+ADDRESS   = {Нижний Новгород},
+PUBLISHER = {ИПФ РАН},
+YEAR      = {2005},
+}
+
+@INBOOK{pel_2006,
+AUTHOR    = {Пелиновский, Е.Н.},
+EDITOR    = {},
+BOOKTITLE = {Нелинейные волны-2006},
+TITLE     = {Нелинейно-дисперсионная теория волн цунами: взгляд после катастрофического цунами в Индийском океане},
+PAGES     = {393-407},
+ADDRESS   = {Нижний Новгород},
+PUBLISHER = {ИПФ РАН},
+YEAR      = {2007},
+}
+
+
+
+@BOOK{6_Kurkin_freak,
+  title = {Волны-убийцы: факты, теория и моделирование},
+  year = {2004},
+  editor = {},
+  publisher = {ННГУ},
+  address = {Нижний Новгород},
+  pages = {157},
+  author = {Куркин, А.А. and Пелиновский, Е.Н.}
+}
+
+@ARTICLE{8_Zakh_Sh_jetp_2012,
+  author = {Шамин, Р. В.},
+  title = {О существовании гладких решений уравнений Дьяченко, описывающих неустановившиеся течения идеальной жидкости со свободной поверхностью},
+  journal = {Доклады Российской академии наук},
+  year = {2006},
+  volume = {406},
+  number = {5},
+  pages = {112-113}
+}
+
+@ARTICLE{9_Shamin_2012,
+  author = {Шамин, Р. В.},
+  title = {Об одном численном методе в задаче о движении идеальной жидкости со свободной поверхностью},
+  journal = {Сибирский журнал вычислительной математики},
+  year = {2006},
+  volume = {9},
+  number = {4},
+  pages = {379-389}
+}
+
+@ARTICLE{10_Chalikov_2009,
+  author = {Chalikov, D.},
+  title = {Freak waves: Their occurrence and probability},
+  journal = {Phys. Fluids},
+  year = {2009},
+  volume = {21},
+  issue = {7},
+  pages = {076602-1076602-18},
+  language = {english}
+}
+
+@ARTICLE{pel_tal_2010,
+  author = {Pelinovsky, E. and Choi, B.H. and Talipova, T. and Woo, S.B. and Kim, D.C.},
+  title = {Solitary wave transformation on the underwater step: theory and numerical experiments},
+  journal = {Applied Math Computations},
+  year = {2010},
+  volume = {217},
+  number = {4},
+  pages = {1704–1718},
+  language = {english}
+}
+
+
+
+@ARTICLE{Hammak_1974,
+  author = {Hammack, J.L. and Segur, H.},
+  title = {The Korteweg– de Vries equation and water waves. part 2: Comparison with experiments},
+  journal = {J. Fluid Mech.},
+  year = {1974},
+  volume = {65},
+  pages = {289–314},
+  language = {english}
+}
+
+@ARTICLE{10_DyachZakh_2008,
+  author = {Dyachenko, A. I. and Zakharov, V.E.},
+  title = {On the Formation of Freak Waves on the Surface of Deep Water},
+  journal = {JETP letters},
+  year = {2008},
+  volume = {88},
+  issue = {5},
+  pages = {356-359},
+  language = {english}
+}
+12.	Huang M.-C., Tsai C-H. Pressure transfer function in time and time-frequency domains // Ocean Engineering. 2008. V. 35. Р. 1203– 1210.
+
+@BOOK{13_Kharif_2009,
+  title = {Rogue Waves in the Ocean},
+  year = {2009},
+  editor = {},
+  publisher = {Springer},
+  pages = {216},
+  author = {Kharif, Ch. and Pelinovsky, E. and Slunyaev, A.},
+  language = {english}
+}
+
+@ARTICLE{14_Nikolkina_2011,
+  author = {Nikolkina, I. and Didenkulova, I.},
+  title = {Rogue waves in 2006–2010},
+  journal = {Nat. Hazards Earth Syst. Sci.},
+  year = {2011},
+  volume = {11},
+  pages = {2913-2924},
+  language = {english}
+}
+
+@ARTICLE{15_Shamin_2009,
+  author = {Shamin, R.V.},
+  title = {Dynamics of an Ideal Liquid with a Free Surface in Conformal Variables},
+  journal = {Journal of Mathematical Sciences},
+  year = {2009},
+  volume = {160},
+  number = {5},
+  pages = {537-678},
+  language = {english}
+}
+
+@ARTICLE{16_Zakh_2010,
+  author = {Zakharov, V.E. and Dyachenko, A. I. and Shamin, R.V.},
+  title = {How probability for freak wave formation can be found},
+  journal = {THE EUROPEAN PHYSICAL JOURNAL SPECIAL TOPICS},
+  year = {2010},
+  doi = {10.1140/epjst/e2010-01242-y},
+  pages = {113-124},
+  language = {english}
+}
+
+@ARTICLE{17_Zakh_2002,
+  author = {Zakharov, V.E. and Dyachenko, A. I. and Vasilyev, O.A. },
+  title = {New method for numerical simulation of a nonstationary potential flow of incompressible fluid with a free surface },
+  journal = {Eur. J. Mech. B Fluids},
+  year = {2002},
+  volume = {21},
+  pages = {283–291},
+  language = {english}
+}
+
+@BOOK{17_Johnson,
+  title = {A modern introduction to the mathematical theory of water waves},
+  year = {1997},
+  address = {Cambridge},
+  publisher = {Cambridge University Press},
+  pages = {},
+  author = {Johnson, R.S.},
+  language = {english}
+}
+
+@BOOK{atlas,
+  title = {Атлас волнения и ветра Тихого океана},
+  year = {1968},
+  address = {Ленинград},
+  publisher = {Гидрометеоиздат},
+  pages = {128},
+  author = {}
+}
+
+@MISC{aviso,
+author = {Cnes, CLS},
+title = {Aviso. Wind/Wave products},
+year = {2013},
+url = {http://www.aviso.oceanobs.com/en/data/products/wind-waves-products/index.html}
+}
+
+@ARTICLE{Fessel_2002,
+  author = {Fessel, D. and Marko, J. and Melling, H.},
+  title = {Wave measurements using upward looking in marginal and polar sea ice regimes},
+  journal = {ASL Environmental sciences},
+  year = {2002},
+  volume = {11},
+  pages = {2913-2924},
+  language = {english}
+}
+
+@BOOK{spravWind_2003,
+  title = {Справочные данные по режиму ветра и волнения Баренцова, Охотского и Каспийского морей.},
+  year = {2003},
+  address = {Санкт-Петербург},
+  publisher = {Российский Морской Регистр Судоходства},
+  pages = {128},
+  editor = {Лопатухин, Л.И. and Бухановский, А. В. and Дегтярев, А.Б. and Рожков, В.А.},
+  author = {}
+}
+
+@BOOK{Sretensky,
+  title = {Теория волновых движений жидкости},
+  year = {1977},
+  address = {Москва},
+  publisher = {Наука},
+  pages = {816},
+  author = {Сретенский, Л.Н.}
+}
+
+
+8.	Ellis J.T., Sherman D.J., Bauer B.O.  Depth Compensation for Pressure Transducer Measurements of Boat Wakes . - Journal of Coastal Research – 2006, SI39, p.488-492
+9.	Hunt J.N. Direct solution of wave dispersion equation. //Proc. ASCE. Jour. Waterway. Port. Coastal and Ocean Eng. v.105. p.457-459.
+@BOOK{tucker_2003,
+  title = {Waves in Ocean Engineering},
+  year = {2001},
+  address = {Amsterdam},
+  publisher = {Elsevier},
+  series = {Elsevier Ocean Engineering Book Series},
+  volume = {5},
+  pages = {521},
+  author = {Tucker, M.J. and Pitt, E.G.}
+}
+
+@BOOK{Holth_2007,
+  title = {Waves in oceanic and coastal waters},
+  year = {2007},
+  address = {Cambridge},
+  publisher = {Cambridge University Press},
+  author = {Holthuijsen, L.H.},
+  language = {english}
+}
+
+@BOOK{Davidan_1988,
+  title = {Теоретические основы и методы расчета ветрового волнения},
+  year = {1988},
+  address = {Ленинград},
+  publisher = {Гидрометеоиздат},
+  pages = {262},
+  editor = {И. Н. Давидан},
+  author = {А.Т. Гургенидзе and Ю.А. Трапезников and С.А. Румянцева and др.}
+}
+
+@BOOK{loyts,
+  title = {Механика жидкости и газа},
+  year = {2003},
+  address = {Москва},
+  publisher = {Дрофа},
+  author = {Лойцянский, Л.Г.}
+}
+
+@BOOK{kotel,
+  title = {Теория потенциальной помехоустойчивости},
+  year = {1956},
+  pages = {276},
+  address = {Москва},
+  publisher = {Госэнергоиздат},
+  author = {Котельников, В.А.}
+}
+
+@BOOK{abrosim,
+  title = {Инструментальные наблюдения за полем волнения в центральной части Каспийского моря с притопленных буйковых станций: автореф. дис. канд. физ.-мат. наук},
+  year = {2008},
+  pages = {16},
+  address = {Москва},
+  publisher = {ИОРАН},
+  author = {Абросимов, С.А.}
+}
+
+
+@BOOK{gmurman,
+  title = {Теория вероятностей и математическая статистика},
+  year = {2003},
+  address = {Москва},
+  publisher = {Высшая школа},
+  author = {Гмурман, В.Е.}
+}
+
+@BOOK{hodasev,
+  title = {Обработка  экспериментальных данных на ЭВМ},
+  year = {2003},
+  address = {Санкт-Петербург},
+  publisher = {СПбГУТ},
+  author = {Ходасевич, Г.Б.}
+}
+
+@BOOK{leman,
+  title = {Проверка статистических гипотез},
+  year = {1979},
+  address = {Москва},
+  publisher = {Наука},
+  author = {Леман, Э.}
+}
+
+@BOOK{kovalev_2011,
+  title = {Техника исследования опасных морских явлений в прибрежной зоне океана},
+  year = {2011},
+  pages = {152},
+  address = {Владивосток},
+  publisher = {Дальнаука},
+  author = {Ковалев, П.Д. and Ковалев, Д.П.}
+}
+
+
+@BOOK{Lich,
+  title = {Grundlagen der Hydromechanik},
+  year = {1929},
+  address = {Berlin},
+  author = {Lichtenstein, L.}
+}
+
+@BOOK{sensor_berto,
+  title = {Океанографические буи},
+  year = {1979},
+  address = {Ленинград},
+  publisher = {Судостроение},
+  pages = {216},
+  author = {Берто, Г.О.}
+}
+
+
+@BOOK{sensor_fomin,
+  title = {Измерение океанских течений},
+  year = {1989},
+  address = {Москва},
+  publisher = {Наука},
+  pages = {197},
+  author = {Фомин, Л.Ф. and Кушнир, В.М. and Титов, В.Б.}
+}
+
+@BOOK{Davidan_1978,
+  title = {Ветровое волнение как вероятностный гидродинамический процесс},
+  year = {1978},
+  address = {Ленинград},
+  publisher = {Гидрометеоиздат},
+  pages = {287},
+  author = {Давидан, И.Н. and Лопатухин, Л.И. and Рожков, В.А.}
+}
+
+14.	Куркин А.А., Пелиновский Е.Н. Волны-убийцы: факты, теория и моделирование, Нижегород. гос. тех. ун-т. Н.Новгород, 2004.
+15.	Kharif Ch., Pelinovsky E. and Slunyaev A.. Rogue waves in the ocean, Springer, 2009. 216p.
+
+@ARTICLE{Soomere_2011,
+  author = {Соомере, Т. and Куркина, О.Е.},
+  title = {Статистика экстремального волнения в юго-западной части Балтийского моря},
+  journal = {Фундаментальная и прикладная гидрофизика},
+  year = {2011},
+  volume = {4},
+  number = {4},
+  pages = {43-57},
+}
+
+@ARTICLE{Peregrinde,
+  author = {Peregrinde, H.},
+  title = {Long waves on a beach},
+  journal = {J. Fluid Mech.},
+  year = {1967},
+  volume = {27},
+  pages = {815-827},
+}
+
+
+
+@ARTICLE{kabat_2007,
+  author = {Кабатченко, И.М. and Косьян, Р.Д. and Красницкий, В.П. and Серых, В.Я.},
+  title = {Опыт эксплуатации волнографа-марсографа ВМ-04},
+  journal = {Океанология},
+  year = {2007},
+  volume = {47},
+  number = {1},
+  pages = {150-155},
+}
+
+@ARTICLE{Lopatukhin_1974,
+  author = {Лопатухин, Л.И.},
+  title = {Анализ распределений элементов волн},
+  journal = {Труды ВНИИГМИ – МЦД},
+  year = {1974},
+  issue = {1},
+  pages = {116-142},
+}
+
+@ARTICLE{Udo,
+  author = {Юдович, В.И.},
+  title = {Нестационарные течения идеальной несжимаемой жидкости},
+  journal = {Журнал выч. мат. и мат. физ.},
+  year = {1963},
+  volume = {3}
+  issue = {6},
+  pages = {1032-1066},
+}
+
+@ARTICLE{Huang_press,
+  author = {Huang, Min-Chih and Tsa, Cheng-Han},
+  title = {Pressure transfer function in time and time-frequency domains},
+  journal = {Ocean Engeneering},
+  year = {2008},
+  volume = {35}
+  pages = {1203-1210},
+  language = {english}
+}
+
+
+@ARTICLE{Kato,
+  author = {Kato, T.},
+  title = {On classical solutions of the two-dimensional non-stationary Euler equation},
+  journal = {ARMA},
+  year = {1967},
+  volume = {25}
+  pages = {188--200},
+  language = {english}
+}
+
+
+@ARTICLE{Gunter,
+  author = {Гюнтер, Н.М.},
+  title = {Об основной задаче гидродинамики},
+  journal = {Известия Физико-математического~института~им.~В.\,А.~Стеклова.},
+  year = {1927},
+  volume = {2}
+  pages = {1-168},
+}
+
+
+
+@ARTICLE{Forristall_1978,
+  author = {Forristall, G.Z.},
+  title = {On the statistical distribution of wave heights is a storm},
+  journal = {J.Geophys. Res.},
+  year = {1978},
+  number = {C5},
+  pages = {2353-2358},
+}
+
+@BOOK{Glukovsky_2007,
+  title = {Исследование морского ветрового волнения},
+  year = {1966},
+  pages = {284},
+  address = {Ленинград},
+  publisher = {Гидрометеоиздат},
+  author = {Глуховский, В.Г.}
+}
